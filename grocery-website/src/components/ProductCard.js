@@ -17,9 +17,6 @@ const ProductCard = ({ product }) => (
         ${product.price}
       </Typography>
     </CardContent>
-    <CardActions>
-      <Button size="small">Add to Cart</Button>
-    </CardActions>
   </Card>
 );
 
