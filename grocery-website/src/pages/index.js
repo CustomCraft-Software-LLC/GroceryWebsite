@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import ProductCard from '../components/ProductCard';
 import { Container, Typography, Stack } from '@mui/material';
 import products from '../data/products';

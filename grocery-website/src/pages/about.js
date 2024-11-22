@@ -1,25 +1,20 @@
 import React from 'react';
-import Layout from '../components/layout';
-import { Container, Typography, Box } from '@mui/material';
+import { Typography, Container } from '@mui/material';
+import Layout from '../components/Layout';
 
-const About = () => (
-  <Layout>
-    <Container sx={{ mt: 4 }}>
-      <Typography variant="h4" sx={{ mb: 4, textAlign: 'center' }}>
-        About Us
-      </Typography>
-      <Box sx={{ maxWidth: 600, margin: '0 auto', textAlign: 'center' }}>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          Our grocery store offers a variety of fresh produce, pantry staples, and daily essentials. 
-          We are committed to providing high-quality products for you and your family.
+const About = () => {
+  return (
+    <Layout>
+      <Container sx={{ my: 4 }}>
+        <Typography variant="h4" gutterBottom>
+          About Us
         </Typography>
         <Typography variant="body1">
-          Since our establishment, we have focused on making grocery shopping more convenient, 
-          with an emphasis on freshness, affordability, and excellent service.
+          We are a local grocery store providing fresh produce and quality food products at affordable prices. Our mission is to provide our customers with healthy and organic choices to improve their daily lives.
         </Typography>
-      </Box>
-    </Container>
-  </Layout>
-);
+      </Container>
+    </Layout>
+  );
+};
 
 export default About;
