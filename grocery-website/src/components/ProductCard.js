@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 
 const ProductCard = ({ product }) => (
-  <Card sx={{ maxWidth: 345 }}>
+  <Card sx={{ maxWidth: 400 }}>
     <CardMedia
       component="img"
       height="140"
