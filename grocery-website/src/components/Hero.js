@@ -1,21 +1,33 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 
-const Hero = () => (
-  <Box sx={{ textAlign: 'center', mb: 5 }}>
-    <Typography 
-      variant="h3" 
-      sx={{ fontWeight: 'bold', mb: 2 }}
+const Hero = () => {
+  return (
+    <Box
+      sx={{
+        height: '400px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundImage: 'url("https://via.placeholder.com/1200x400")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        textAlign: 'center',
+        color: 'white',
+      }}
     >
-      Welcome to FreshMart
-    </Typography>
-    <Typography 
-      variant="body1" 
-      sx={{ fontSize: '1.2rem', maxWidth: 600, margin: '0 auto' }}
-    >
-      Your one-stop destination for the freshest produce, high-quality pantry staples, and sustainable products.
-    </Typography>
-  </Box>
-);
+      <Typography variant="h2" sx={{ fontWeight: 'bold', mb: 2 }}>
+        Welcome to FreshMart
+      </Typography>
+      <Typography variant="h5" sx={{ mb: 3 }}>
+        Your trusted wholesaler for fresh and quality groceries.
+      </Typography>
+      <Button variant="contained" color="secondary" size="large" href="/products">
+        Browse Products
+      </Button>
+    </Box>
+  );
+};
 
 export default Hero;
