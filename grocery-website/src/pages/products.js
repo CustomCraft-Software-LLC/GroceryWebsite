@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography, TextField } from '@mui/material';
+import { Box, Typography, TextField, Stack } from '@mui/material';
 import ProductCard from '../components/ProductCard';
 import products from '../data/products';
 import Layout from '../components/layout';
@@ -18,7 +18,7 @@ const Products = () => {
           Our Products
         </Typography>
 
-        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: 4 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
           <TextField
             label="Search Products"
             variant="outlined"
@@ -28,11 +28,12 @@ const Products = () => {
           />
         </Box>
 
-        <Box
+        <Stack
+          direction="row"
+          spacing={4}
           sx={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-            gap: 4,
+            flexWrap: 'wrap',
+            justifyContent: 'center',
           }}
         >
           {filteredProducts.length > 0 ? (
@@ -44,14 +45,13 @@ const Products = () => {
               variant="body1"
               sx={{
                 textAlign: 'center',
-                gridColumn: '1 / -1',
-                color: 'text.secondary',
+                width: '100%',
               }}
             >
               No products match your search.
             </Typography>
           )}
-        </Box>
+        </Stack>
       </Box>
     </Layout>
   );

@@ -11,14 +11,13 @@ const Navbar = () => {
       sx={{
         backgroundColor: theme.palette.primary.main,
         boxShadow: 'none',
-        borderBottom: `1px solid ${theme.palette.divider}`,
+        borderRadius: 0
       }}
     >
       <Toolbar
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          px: { xs: 2, sm: 4 },
         }}
       >
         <Typography

@@ -4,17 +4,19 @@ import Footer from './Footer';
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import theme from '../styles/theme'; 
 
-const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Header />
-      <Box component="main" sx={{ flex: 1 }}>
-        {children}
+const Layout = ({ children }) => {
+  return ( 
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Header />
+        <Box component="main" sx={{ flex: 1 }}>
+          {children}
+        </Box>
+        <Footer />
       </Box>
-      <Footer />
-    </Box>
-  </ThemeProvider>
-);
+    </ThemeProvider>
+  );
+}
 
 export default Layout;

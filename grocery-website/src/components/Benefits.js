@@ -25,7 +25,7 @@ const Benefits = () => {
 
   return (
     <Box sx={{ mb: 8 }}>
-      <Typography variant="h4" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 4 }}>
+      <Typography variant="h2" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 4 }}>
         Why Choose FreshMart?
       </Typography>
       {benefits.map((benefit, index) => (

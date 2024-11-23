@@ -14,13 +14,12 @@ const Hero = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         textAlign: 'center',
-        color: 'white',
       }}
     >
-      <Typography variant="h2" sx={{ fontWeight: 'bold', mb: 2 }}>
+      <Typography variant="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
         Welcome to FreshMart
       </Typography>
-      <Typography variant="h5" sx={{ mb: 3 }}>
+      <Typography variant="h2" sx={{ mb: 3 }}>
         Your trusted wholesaler for fresh and quality groceries.
       </Typography>
       <Button variant="contained" color="secondary" size="large" href="/products">

@@ -4,7 +4,7 @@ import { Box, Typography, CardMedia } from '@mui/material';
 const FeaturedProducts = () => {
   return (
     <Box sx={{ textAlign: 'center', mb: 8 }}>
-      <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 3 }}>
+      <Typography variant="h2" sx={{ fontWeight: 'bold', mb: 3 }}>
         Featured Products
       </Typography>
       <CardMedia

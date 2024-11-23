@@ -1,20 +1,20 @@
 import React from 'react';
 import { Typography, Container, Box, CardMedia } from '@mui/material';
 import Layout from '../components/layout';
+import { useTheme } from '@mui/material/styles';
 
 const About = () => {
-  return (
+  const theme = useTheme();
+
+  return ( 
     <Layout>
       <Container sx={{ my: 6 }}>
         <Box sx={{ textAlign: 'center', mb: 6 }}>
-          <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+          <Typography variant="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
             About Us
           </Typography>
-          <Typography
-            variant="body1"
-            sx={{ maxWidth: 700, mx: 'auto' }}
-          >
-            At FreshMart, we pride ourselves on providing fresh, affordable, and sustainable grocery products for our community. Explore our story, mission, and commitment to quality.
+          <Typography variant="body1" sx={{ maxWidth: 700, mx: 'auto' }}>
+            FreshMart provides fresh, affordable, and sustainable grocery products for our community. Learn more about our story and mission.
           </Typography>
         </Box>
 
@@ -22,20 +22,14 @@ const About = () => {
           <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3 }}>
             Our Story
           </Typography>
-          <Typography variant="body1" sx={{ lineHeight: 1.7, mb: 3 }}>
-            Established in 1995, FreshMart began as a small family-run store in the heart of our town. Over the years, we’ve grown into a trusted destination for fresh produce and high-quality food products. 
-            Despite our growth, we remain committed to our roots—delivering exceptional service, supporting local farmers, and fostering a healthy lifestyle for our customers.
+          <Typography variant="body1" sx={{ mb: 3 }}>
+            Since 1995, FreshMart has grown from a small family store into a trusted destination for fresh produce, supporting local farmers and healthy lifestyles.
           </Typography>
           <CardMedia
             component="img"
             image="https://via.placeholder.com/800x400"
-            alt="FreshMart history"
-            sx={{
-              width: '100%',
-              height: 'auto',
-              borderRadius: 4,
-              boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',
-            }}
+            alt="Our story"
+            sx={{ width: '100%', borderRadius: 4, boxShadow: 2 }}
           />
         </Box>
 
@@ -43,9 +37,8 @@ const About = () => {
           <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3 }}>
             Our Mission
           </Typography>
-          <Typography variant="body1" sx={{ lineHeight: 1.7 }}>
-            We aim to make healthy and organic food accessible to everyone. By prioritizing quality and sustainability, we strive to create a positive impact on our customers, our community, and the environment.
-            Our dedication to freshness and affordability ensures that you and your family receive the best possible products every day.
+          <Typography variant="body1">
+            We make healthy food accessible by prioritizing quality and sustainability. FreshMart is committed to freshness, affordability, and care every day.
           </Typography>
         </Box>
 
@@ -54,26 +47,22 @@ const About = () => {
             textAlign: 'center',
             py: 6,
             px: 4,
-            backgroundColor: 'primary.main',
+            backgroundColor: '',
             color: 'white',
             borderRadius: 2,
-            boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)',
             mt: 6,
           }}
         >
           <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2 }}>
-            Experience Freshness Like Never Before
+            Experience Freshness
           </Typography>
-          <Typography
-            variant="body1"
-            sx={{ maxWidth: 600, mx: 'auto', mb: 3 }}
-          >
-            Visit FreshMart today and discover the difference in quality, affordability, and care. Your satisfaction is our priority.
+          <Typography variant="body1" sx={{ maxWidth: 600, mx: 'auto' }}>
+            Visit FreshMart today for quality, affordability, and care. Your satisfaction is our priority.
           </Typography>
         </Box>
       </Container>
     </Layout>
   );
-};
+}
 
 export default About;

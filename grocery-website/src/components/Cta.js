@@ -1,7 +1,9 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const Cta = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -9,8 +11,7 @@ const Cta = () => {
         py: 6,
         px: 4,
         mt: 6,
-        backgroundColor: 'primary.main',
-        color: 'white',
+        backgroundColor: theme.palette.primary.main,
         borderRadius: 2,
         boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)',
       }}

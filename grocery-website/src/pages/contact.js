@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, TextField, Button, Typography, Container } from '@mui/material';
 import Layout from '../components/layout';
+import Socials from '../components/Socials';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -10,7 +11,7 @@ const Contact = () => {
   return (
     <Layout>
       <Container maxWidth="sm" sx={{ my: 6 }}>
-        <Typography variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', mb: 3 }}>
+        <Typography variant="h1" sx={{ textAlign: 'center', fontWeight: 'bold', mb: 3 }}>
           Contact Us
         </Typography>
         <Typography variant="body1" sx={{ textAlign: 'center', mb: 4 }}>
@@ -44,6 +45,7 @@ const Contact = () => {
             </Button>
           </Box>
         </form>
+        <Socials />
       </Container>
     </Layout>
   );
