@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Grocery",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "homepage": "https://customcraft-software-llc.github.io/GroceryWebsite/",
+  "author": "",
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
@@ -20,6 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "prettier": "^2.8.8"
   },
   "keywords": [
@@ -32,6 +34,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
