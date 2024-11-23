@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Typography, CardMedia } from '@mui/material';
+import { Box, Typography, CardMedia } from '@mui/material';
 
 const Benefits = () => {
   const benefits = [
@@ -28,38 +28,42 @@ const Benefits = () => {
       <Typography variant="h4" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 4 }}>
         Why Choose FreshMart?
       </Typography>
-      <Grid container spacing={4}>
-        {benefits.map((benefit, index) => (
-          <Grid item xs={12} sm={4} key={index}>
-            <Box
-              sx={{
-                textAlign: 'center',
-                p: 4,
-                borderRadius: 2,
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-                backgroundColor: 'background.paper',
-                transition: 'transform 0.3s ease',
-                '&:hover': {
-                  transform: 'scale(1.05)',
-                },
-              }}
-            >
-              <CardMedia
-                component="img"
-                image={benefit.img}
-                alt={benefit.title}
-                sx={{ width: 80, height: 80, margin: '0 auto', mb: 2 }}
-              />
-              <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
-                {benefit.title}
-              </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {benefit.description}
-              </Typography>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
+      {benefits.map((benefit, index) => (
+        <Box
+          key={index}
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            alignItems: 'center',
+            textAlign: { xs: 'center', sm: 'left' },
+            mb: 6,
+            p: { xs: 2, sm: 4 },
+            borderRadius: 2,
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+          }}
+        >
+          <CardMedia
+            component="img"
+            image={benefit.img}
+            alt={benefit.title}
+            sx={{
+              width: 100,
+              height: 100,
+              borderRadius: '50%',
+              margin: { xs: '0 auto', sm: '0 20px 0 0' },
+              mb: { xs: 2, sm: 0 },
+            }}
+          />
+          <Box>
+            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
+              {benefit.title}
+            </Typography>
+            <Typography variant="body2">
+              {benefit.description}
+            </Typography>
+          </Box>
+        </Box>
+      ))}
     </Box>
   );
 };

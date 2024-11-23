@@ -6,7 +6,7 @@ const ProductGrid = ({ title, products }) => (
   <div>
     <Typography 
       variant="h4" 
-      sx={{ mb: 3, fontWeight: 'bold', color: 'text.primary' }}
+      sx={{ mb: 3, fontWeight: 'bold' }}
     >
       {title}
     </Typography>

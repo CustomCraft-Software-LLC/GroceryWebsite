@@ -9,15 +9,18 @@ const Footer = () => {
         backgroundColor: 'primary.main',
         color: 'white',
         py: 4,
-        textAlign: 'center',
+        mt: 'auto',
       }}
     >
-      <Container>
-        <Typography variant="body1" sx={{ mb: 1 }}>
+      <Container sx={{ textAlign: 'center' }}>
+        <Typography
+          variant="body1"
+          sx={{
+            fontSize: '1rem',
+            fontWeight: '500',
+          }}
+        >
           © {new Date().getFullYear()} Grocery Store. All Rights Reserved.
-        </Typography>
-        <Typography variant="body2">
-          Made with ❤️ using Gatsby and Material-UI.
         </Typography>
       </Container>
     </Box>

@@ -1,17 +1,19 @@
 import React from 'react';
-import Header from './header';
+import Header from './Header';
 import Footer from './Footer';
-import { ThemeProvider, CssBaseline } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import theme from '../styles/theme'; 
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <div>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
-      <main>{children}</main>
+      <Box component="main" sx={{ flex: 1 }}>
+        {children}
+      </Box>
       <Footer />
-    </div>
+    </Box>
   </ThemeProvider>
 );
 
