@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
   return ( 
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Box>
         <Header />
-        <Box component="main" sx={{ flex: 1 }}>
+        <Box component="main" sx={{ flex: 1, background: '#A0A0A0' }}>
           {children}
         </Box>
         <Footer />

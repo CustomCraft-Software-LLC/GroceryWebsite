@@ -3,17 +3,37 @@ import { Typography, Stack } from '@mui/material';
 import ProductCard from './ProductCard';
 
 const ProductGrid = ({ title, products }) => {
-  return ( 
+  return (
     <div>
       <Typography 
         variant="h3" 
-        sx={{ mb: 3, fontWeight: 'bold' }}
+        sx={{ mb: 3, fontWeight: 'bold', textAlign: 'center' }}
       >
         {title}
       </Typography>
-      <Stack container spacing={3}>
+      <Stack
+        direction="column"
+        spacing={3}
+        sx={{
+          '@media (min-width:600px)': {
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+          },
+        }}
+      >
         {products.map((product, index) => (
-          <Stack item xs={12} sm={6} md={3} key={index}>
+          <Stack
+            key={index}
+            sx={{
+              width: '100%',
+              '@media (min-width:600px)': {
+                width: '50%',
+              },
+              '@media (min-width:900px)': {
+                width: '25%',
+              },
+            }}
+          >
             <ProductCard {...product} />
           </Stack>
         ))}

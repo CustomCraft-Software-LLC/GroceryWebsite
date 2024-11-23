@@ -5,7 +5,7 @@ const theme = createTheme({
     mode: 'light',
     primary: { main: '#9ACD32', contrastText: '#FFFFFF' }, 
     secondary: { main: '#ADFF2F', contrastText: '#000000' }, 
-    background: { default: '#FFFFFF', paper: '#F4F6F8' },
+    background: { default: '#FFFFFF', paper: '#F0F0F0' },
     text: { primary: '#212121', secondary: '#616161' },
   },
   typography: {
@@ -20,7 +20,7 @@ const theme = createTheme({
       fontSize: '1.75rem', 
       fontWeight: 600, 
       lineHeight: 1.3, 
-      color: '#9ACD32', 
+      color: '#ADFF2F', 
     },
     h3: { 
       fontSize: '1.5rem', 
@@ -29,10 +29,11 @@ const theme = createTheme({
       color: '#9ACD32', 
     },
     body1: { 
-      fontSize: '1rem', 
-      fontWeight: 400, 
-      lineHeight: 1.5, 
-      color: '#000000',
+      fontSize: '1rem',
+      fontWeight: 400,
+      lineHeight: 1.5,
+      color: '#4A4A4A', 
+      marginBottom: '1rem', 
     },
     body2: { 
       fontSize: '0.875rem', 

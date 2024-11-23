@@ -11,22 +11,20 @@ const Footer = () => {
       component="footer"
       sx={{
         backgroundColor: theme.palette.primary.main,
+        textAlign: 'center',
         py: 4,
-        mt: 'auto',
       }}
     >
-      <Container sx={{ textAlign: 'center' }}>
         <Typography
           variant="body1"
           sx={{
             fontSize: '1rem',
-            fontWeight: '500',
+            fontWeight: '660',
           }}
         >
           © {new Date().getFullYear()} Grocery Store. All Rights Reserved.
         </Typography>
         <Socials />
-      </Container>
     </Box>
   );
 };

@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <Container maxWidth="sm" sx={{ my: 6 }}>
+      <Container sx={{ my: 6 }}>
         <Typography variant="h1" sx={{ textAlign: 'center', fontWeight: 'bold', mb: 3 }}>
           Contact Us
         </Typography>

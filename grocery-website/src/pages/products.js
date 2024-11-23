@@ -14,7 +14,7 @@ const Products = () => {
   return (
     <Layout>
       <Box sx={{ padding: 4 }}>
-        <Typography variant="h3" align="center" gutterBottom>
+        <Typography variant="h1" align="center" gutterBottom>
           Our Products
         </Typography>
 
@@ -30,10 +30,10 @@ const Products = () => {
 
         <Stack
           direction="row"
-          spacing={4}
           sx={{
             flexWrap: 'wrap',
             justifyContent: 'center',
+            gap: 3,
           }}
         >
           {filteredProducts.length > 0 ? (

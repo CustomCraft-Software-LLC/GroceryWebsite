@@ -19,7 +19,7 @@ const About = () => {
         </Box>
 
         <Box sx={{ mb: 6 }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3 }}>
+          <Typography variant="h2" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 3 }}>
             Our Story
           </Typography>
           <Typography variant="body1" sx={{ mb: 3 }}>
@@ -34,7 +34,7 @@ const About = () => {
         </Box>
 
         <Box sx={{ mb: 6 }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3 }}>
+          <Typography variant="h2" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 3 }}>
             Our Mission
           </Typography>
           <Typography variant="body1">
@@ -53,7 +53,7 @@ const About = () => {
             mt: 6,
           }}
         >
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2 }}>
+          <Typography variant="h2" sx={{ fontWeight: 'bold', mb: 2 }}>
             Experience Freshness
           </Typography>
           <Typography variant="body1" sx={{ maxWidth: 600, mx: 'auto' }}>

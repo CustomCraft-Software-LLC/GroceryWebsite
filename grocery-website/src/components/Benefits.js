@@ -55,10 +55,10 @@ const Benefits = () => {
             }}
           />
           <Box>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
+            <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 1 }}>
               {benefit.title}
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               {benefit.description}
             </Typography>
           </Box>
