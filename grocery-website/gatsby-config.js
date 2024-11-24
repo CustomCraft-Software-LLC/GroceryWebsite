@@ -1,13 +1,11 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://customcraft-software-llc.github.io/GroceryWebsite/`,
   },
+  pathPrefix: `/grocery-website`,
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -26,9 +24,10 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/example.png`,
       },
     },
   ],
-}
+};

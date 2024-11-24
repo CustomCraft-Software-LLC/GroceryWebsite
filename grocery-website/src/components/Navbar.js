@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 
 const Navbar = () => {
   const theme = useTheme();
+  const pathPrefix = '/GroceryWebsite';
 
   return (
     <AppBar
@@ -33,7 +34,7 @@ const Navbar = () => {
           {['Home', 'About', 'Products', 'Contact'].map((item, index) => (
             <Button
               key={index}
-              href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+              href={`${pathPrefix}${item === 'Home' ? '/' : `/${item.toLowerCase()}`}`}
               sx={{
                 mx: 1,
                 color: theme.palette.common.white,
