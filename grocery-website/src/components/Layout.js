@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import { ThemeProvider, CssBaseline, Box } from '@mui/material';
-import theme from '../styles/theme'; 
+import React from "react"
+import Header from "./Header"
+import Footer from "./Footer"
+import { ThemeProvider, CssBaseline, Box } from "@mui/material"
+import theme from "../styles/theme"
 
 const Layout = ({ children }) => {
-  return ( 
+  return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box>
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         <Footer />
       </Box>
     </ThemeProvider>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

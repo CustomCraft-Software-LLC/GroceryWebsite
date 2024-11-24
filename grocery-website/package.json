@@ -1,10 +1,25 @@
 {
-  "name": "Grocery",
-  "private": true,
-  "description": "",
+  "name": "GroceryWebsite",
   "version": "0.1.0",
+  "private": true,
+  "description": "A modern grocery website built with Gatsby and Material-UI.",
   "homepage": "https://customcraft-software-llc.github.io/GroceryWebsite/",
-  "author": "",
+  "author": "CustomCraft Software LLC",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/customcraft-software-llc/GroceryWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/customcraft-software-llc/GroceryWebsite/issues"
+  },
+  "keywords": [
+    "gatsby",
+    "grocery",
+    "website",
+    "material-ui",
+    "react"
+  ],
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
@@ -24,10 +39,6 @@
     "gh-pages": "^6.2.0",
     "prettier": "^2.8.8"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -37,12 +48,5 @@
     "deploy": "gatsby build && gh-pages -d public",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

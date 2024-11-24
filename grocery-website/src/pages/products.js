@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Box, Typography, TextField, Stack } from '@mui/material';
-import ProductCard from '../components/ProductCard';
-import products from '../data/products';
-import Layout from '../components/layout';
+import React, { useState } from "react"
+import { Box, Typography, TextField, Stack } from "@mui/material"
+import ProductCard from "../components/ProductCard"
+import products from "../data/products"
+import Layout from "../components/layout"
 
 const Products = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("")
 
-  const filteredProducts = products.filter((product) =>
+  const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(search.toLowerCase())
-  );
+  )
 
   return (
     <Layout>
@@ -18,21 +18,21 @@ const Products = () => {
           Our Products
         </Typography>
 
-        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
+        <Box sx={{ display: "flex", justifyContent: "center", mb: 4 }}>
           <TextField
             label="Search Products"
             variant="outlined"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            sx={{ maxWidth: 400, width: '100%' }}
+            onChange={e => setSearch(e.target.value)}
+            sx={{ maxWidth: 400, width: "100%" }}
           />
         </Box>
 
         <Stack
           direction="row"
           sx={{
-            flexWrap: 'wrap',
-            justifyContent: 'center',
+            flexWrap: "wrap",
+            justifyContent: "center",
             gap: 3,
           }}
         >
@@ -44,8 +44,8 @@ const Products = () => {
             <Typography
               variant="body1"
               sx={{
-                textAlign: 'center',
-                width: '100%',
+                textAlign: "center",
+                width: "100%",
               }}
             >
               No products match your search.
@@ -54,7 +54,7 @@ const Products = () => {
         </Stack>
       </Box>
     </Layout>
-  );
-};
+  )
+}
 
-export default Products;
+export default Products
