@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <CssBaseline />
       <Box>
         <Header />
-        <Box component="main" sx={{ flex: 1, background: '#A0A0A0' }}>
+        <Box component="main" sx={{ flex: 1 }}>
           {children}
         </Box>
         <Footer />

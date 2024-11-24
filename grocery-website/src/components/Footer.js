@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Socials from './Socials';
 import { useTheme } from '@mui/material/styles';
 

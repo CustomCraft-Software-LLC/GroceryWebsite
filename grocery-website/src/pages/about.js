@@ -1,11 +1,8 @@
 import React from 'react';
 import { Typography, Container, Box, CardMedia } from '@mui/material';
 import Layout from '../components/layout';
-import { useTheme } from '@mui/material/styles';
 
 const About = () => {
-  const theme = useTheme();
-
   return ( 
     <Layout>
       <Container sx={{ my: 6 }}>
