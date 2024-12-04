@@ -59,7 +59,6 @@ const About = () => {
 						textAlign: 'center',
 						py: 6,
 						px: 4,
-						backgroundColor: '',
 						color: 'white',
 						borderRadius: 2,
 						mt: 6,
