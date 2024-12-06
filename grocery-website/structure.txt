@@ -1,0 +1,40 @@
+.
+├── gatsby-browser.js
+├── gatsby-config.js
+├── gatsby-node.js
+├── gatsby-ssr.js
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── components
+│   │   ├── Benefits.js
+│   │   ├── Cta.js
+│   │   ├── FeaturedProducts.js
+│   │   ├── Footer.js
+│   │   ├── Header.js
+│   │   ├── Hero.js
+│   │   ├── Layout.js
+│   │   ├── Navbar.js
+│   │   ├── ProductCard.js
+│   │   ├── ProductGrid.js
+│   │   ├── seo.js
+│   │   └── Socials.js
+│   ├── data
+│   │   ├── products.js
+│   │   └── socials.js
+│   ├── images
+│   │   └── example.png
+│   ├── pages
+│   │   ├── 404.js
+│   │   ├── about.js
+│   │   ├── contact.js
+│   │   ├── index.js
+│   │   └── products.js
+│   ├── styles
+│   │   └── theme.js
+│   └── templates
+└── structure.txt
+
+7 directories, 30 files
